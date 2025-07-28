@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <!-- Daisy Ui and tailwind css CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="relative">
+      <section class="header_section bg-[#4a9af0] pt-[58px] pb-[70px]">
+        <div class="w-[90%] mx-auto">
+          <h3>
+            <i
+              class="fa-solid fa-angle-left text-xl font-semibold text-white"
+            ></i>
+            <span class="text-xl font-semibold text-white ml-4">Sign in</span>
+          </h3>
+        </div>
+      </section>
+
+      <!-- welcome and login form section -->
+      <section class="bg-white rounded-t-[30px] pt-[27px] absolute top-[100px]">
+        <div class="w-[90%] mx-auto">
+          <h1 class="text-2xl text-[#3629B7] font-bold">Welcome Back</h1>
+          <p class="font-bold mb-4 pt-2">Hello there, sign in to continue</p>
+          <img src="images/login.png" alt="" class="mx-auto" />
+
+          <!-- login form -->
+          <form class="fieldset mt-5">
+            <input
+              type="email"
+              class="input w-full border-[3px] border-gray-300"
+              placeholder="Email"
+            />
+            <input
+              type="password"
+              class="input w-full my-3 border-[3px] border-gray-300"
+              placeholder="Password"
+            />
+            <div class="text-right">
+              <a class="link link-hover">Forgot password?</a>
+            </div>
+            <button class="btn btn-primary mt-5 w-full">Login</button>
+            <p class="text-center mt-2">
+              Don't have an account?
+              <span class="font-bold text-[#3629B7]">Sign Up</span>
+            </p>
+          </form>
+        </div>
+
+        <!-- footer image -->
+        <div class="mt-[70px]">
+          <img src="images/login_footer.png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
