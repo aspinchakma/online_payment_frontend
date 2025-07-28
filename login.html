@@ -45,19 +45,25 @@
           <!-- login form -->
           <form class="fieldset mt-5">
             <input
-              type="email"
+              type="text"
               class="input w-full border-[3px] border-gray-300"
-              placeholder="Email"
+              placeholder="Phone Number"
+              id="phone_number"
+              required
             />
             <input
               type="password"
               class="input w-full my-3 border-[3px] border-gray-300"
-              placeholder="Password"
+              placeholder="Pin"
+              id="pin_number"
+              required
             />
             <div class="text-right">
               <a class="link link-hover">Forgot password?</a>
             </div>
-            <button class="btn btn-primary mt-5 w-full">Login</button>
+            <button class="btn btn-primary mt-5 w-full" id="login_button">
+              Login
+            </button>
             <p class="text-center mt-2">
               Don't have an account?
               <span class="font-bold text-[#3629B7]">Sign Up</span>
@@ -71,5 +77,8 @@
         </div>
       </section>
     </main>
+
+    <!-- javascript file -->
+    <script type="module" src="scripts/login.js"></script>
   </body>
 </html>
